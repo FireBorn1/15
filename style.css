@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  background: purple;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.box div {
+  width: 30px;
+  height: 30px;
+  background: orange;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.bottom {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
